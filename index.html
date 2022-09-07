@@ -7,6 +7,7 @@
     
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='./script.js' defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -26,40 +27,43 @@
             <form action="">
                 <div class="form left">
                     <p class="form-title">
-                        haye
+                        Register Here
                     </p>
                     <div class="input">
                         <label for="firstName">FIRST NAME</label>
-                        <input type="text" name="firstName">
+                        <input type="text" name="firstName" required>
                     </div>
                                 
                     <div class="input">
                         <label for="lastName">LAST NAME</label>
-                        <input type="text" name="lastName">
+                        <input type="text" name="lastName" required>
                     </div>        
                                 
                     <div class="input">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email">
+                        <input type="email" name="email" required>
                     </div>      
                                 
                     <div class="input">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="text" name="phone">
+                        <input type="text" name="phone" required>
                     </div>       
                         
                     <div class="input">
                         <label for="pass">PASSWORD</label>
-                        <input type="password" name="password"> 
+                        <input type="password" name="password" id="pass1" required> 
                     </div>    
                             
                     <div class="input">
                         <label for="conPassword">CONFIRM PASSWORD</label>
-                        <input type="password" name="conPassword">
+                        <input type="password" name="conPassword" id="pass2"required>
+                    </div>
+                    <div class='error-wrapper'>
+                        <div class='pass-error-msg'>* Passwords do not match</div>
                     </div>        
                 </div>
                 <div class="button left">
-                    <button type="submit">
+                    <button type="submit" class="submit">
                         Create Account
                     </button>
                 </div>

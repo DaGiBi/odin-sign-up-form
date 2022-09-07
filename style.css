@@ -137,6 +137,19 @@ a:hover{
     color: white;
 }
 
+.error-wrapper {
+position: relative;
+margin-top: -1.5rem;
+}
+
+.pass-error-msg {
+display: none;
+position: absolute;
+color:rgb(228, 109, 109);
+font-size: 0.8rem;
+left: 0.65rem;
+top: 0.2rem;
+}
 
 @media only screen and (max-width: 500px)  {
     .body{
